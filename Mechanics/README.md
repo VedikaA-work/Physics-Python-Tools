@@ -3,7 +3,7 @@
 This module provides a robust computational tool to determine the **Young's Modulus** ($E$) of a material. It serves as a practical application of material science constants using Python's functional programming.
 
 ## 🧪 Scientific Overview
-![Young's Modulus Diagram](./youngs_modulus_graph.jpg)
+![Young's Modulus Diagram](./youngs_modulus_graph.png)
 
 Young's Modulus is a fundamental property that measures the stiffness of a solid material. It is defined as the ratio of tensile stress to tensile strain:
 
