@@ -29,4 +29,8 @@ Run the script and enter the following parameters when prompted:
 4. New Length after deformation ($m$)
 
 ---
+### 📂 Source Code
+You can view and download the full Python script here: 
+**[👉 youngs_modulus.py](./youngs_modulus.py)**
+---
 *Part of the Physics Python Tools Gallery*
