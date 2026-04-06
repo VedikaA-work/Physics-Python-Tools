@@ -3,7 +3,7 @@
 This module provides a robust computational tool to determine the relationship between **Voltage** ($V$), **Current** ($I$), and **Resistance** ($R$). It serves as a practical application of circuit theory using Python's functional programming.
 
 ## 🧪 Scientific Overview
-![Ohm's Law Relationship Diagram](./ohms_law_diagram.png)
+![Ohm's Law Relationship Diagram](./ohms_law_circuit_diagram.jpg)
 
 Ohm's Law is a fundamental principle in electronics, stating that the current through a conductor between two points is directly proportional to the voltage across the two points.
 
