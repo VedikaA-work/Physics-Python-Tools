@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Python program to find young's modulus 
+Python program to find young's modulus using defined function 
    also includes calculations for stress and strain
 
 @author: vedika_apte
