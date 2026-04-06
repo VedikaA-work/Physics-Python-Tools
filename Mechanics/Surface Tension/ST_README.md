@@ -35,4 +35,4 @@ This script follows clean coding standards for scientific computing:
 View the full implementation here: 
 **[👉 surface_tension.py](./surface_tension.py)**
 
-*Developed by Vedika | M.Sc. Physics*
+*Part of the Physics Python Tools Gallery*
