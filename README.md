@@ -59,5 +59,5 @@ An interactive calculator for exploring the dynamics between **Voltage** ($V$), 
 **Developed by Vedika**
 *M.Sc. Physics | Analytical Instrumentation | Prompt Engineer | Pitch Deck Designer*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin)](YOUR_LINK_HERE) 
-[![Upwork](https://img.shields.io/badge/Upwork-Portfolio-6fda44?style=for-the-badge&logo=upwork)](YOUR_LINK_HERE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vedika-apte-9337343a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) 
+[![Upwork](https://img.shields.io/badge/Upwork-Portfolio-6fda44?style=for-the-badge&logo=upwork)](https://www.upwork.com/freelancers/~01cfc2f5a79060483b)
