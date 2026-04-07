@@ -33,5 +33,8 @@ Run the script and enter the following parameters when prompted:
 You can view and download the full Python script here: 
 **[👉 youngs_modulus.py](./youngs_modulus.py)**
 ---
+*Developed by vedika_apte | Msc Physics | Python developer*
+
 *Part of the Physics Python Tools Gallery*
+
 
