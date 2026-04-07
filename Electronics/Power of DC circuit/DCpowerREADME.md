@@ -4,7 +4,7 @@ This module provides a dual-purpose computational tool to determine the **Electr
 
 ## 🧪 Scientific Overview
 
-![DC Circuit Power](power_of_dc_circuit.jpg)
+![DC Circuit Power](power_of_dc_circuit.png)
 
 In an electrical circuit, power represents the rate at which electrical energy is transferred by an electric circuit. Resistance, on the other hand, is the measure of the opposition to current flow.
 
