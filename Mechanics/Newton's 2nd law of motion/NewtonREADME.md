@@ -3,6 +3,9 @@
 This module provides a streamlined computational tool to determine the **Net Force** ($F$) acting on a body. It serves as a practical implementation of classical mechanics using Python's functional programming.
 
 ## 🧪 Scientific Overview
+
+![Newton's 2nd law diagram](./newtons_2nd_law.jpg)
+
 Newton's Second Law of Motion defines the relationship between an object's mass and the amount of force needed to accelerate it. It states that the acceleration of an object is directly proportional to the net force acting upon it and inversely proportional to its mass.
 
 The fundamental formula is:
