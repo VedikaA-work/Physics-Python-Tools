@@ -4,7 +4,7 @@ This module provides a computational tool to determine the **Optical Power** ($P
 
 ## 🧪 Scientific Overview
 
-![Lens Power and Focal Length Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Focus_point.svg/800px-Focus_point.svg.png)
+![Lens Power and Focal Length Diagram](focal_length.svg.png)
 
 The power of a lens is a measure of the degree of convergence or divergence of light rays falling on it. A lens with a shorter focal length bends light rays more strongly and thus has a higher optical power.
 
