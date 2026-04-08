@@ -3,20 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <title>Physics Python Tools</title>
+
 <style>
-body {font-family: Arial, sans-serif; margin:0; background:#0f172a; color:#e2e8f0;}
-.container {max-width:1000px; margin:auto; padding:20px;}
-h1, h2 {color:#38bdf8;}
-.section {margin:25px 0;}
-.card {background:#1e293b; padding:15px; border-radius:10px; margin:10px 0;}
-a {color:#22c55e; text-decoration:none;}
-a:hover {text-decoration:underline;}
-.badge {display:inline-block; background:#334155; padding:5px 10px; border-radius:5px; margin:5px 5px 5px 0;}
-.footer {text-align:center; margin-top:30px; font-size:14px; color:#94a3b8;}
-.icons a {margin:0 10px; font-size:22px;}
+body {margin:0; font-family:'Segoe UI'; background:#f8fafc; color:#1e293b;}
+.container {max-width:1100px; margin:auto; padding:20px;}
+h1{text-align:center;}
+
+.section{margin:40px 0;}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+
+.card{
+  background:white;
+  border-radius:15px;
+  padding:20px;
+  display:flex;
+  gap:15px;
+  align-items:center;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+.card:hover{transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+
+.icon{
+  width:50px; height:50px;
+  border-radius:12px;
+  display:flex; align-items:center; justify-content:center;
+  color:white; font-size:20px;
+}
+
+/* SECTION COLORS */
+.mech .icon{background:#f97316;}     /* orange */
+.elec .icon{background:#3b82f6;}     /* blue */
+.opt .icon{background:#eab308;}      /* yellow */
+.thermo .icon{background:#ef4444;}   /* red */
+
+a{text-decoration:none; color:inherit;}
+
+.footer{text-align:center; margin-top:40px;}
+.footer a{margin:0 10px; font-size:22px; color:#0f172a;}
 </style>
 
-<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -25,82 +51,88 @@ a:hover {text-decoration:underline;}
 <div class="container">
 
 <h1>🏛️ Physics-Python-Tools</h1>
-<p><i>The Computing Gallery</i></p>
+<p style="text-align:center;">The Computing Gallery</p>
 
-<div>
-<span class="badge">📘 M.Sc Physics</span>
-<span class="badge">🐍 Python 3.x</span>
-<span class="badge">📊 Scientific Computing</span>
-</div>
+<!-- Mechanics -->
+<div class="section mech">
+<h2>⚙️ Mechanics Laboratory</h2>
+<div class="grid">
 
-<p>A curated collection of computational tools bridging <b>Theoretical Physics</b> and <b>Programming</b>.</p>
+<a href="#"><div class="card">
+<div class="icon"><i class="fas fa-cogs"></i></div>
+<div><b>Newton's 2nd Law</b><br><small>Force, Mass, Acceleration</small></div>
+</div></a>
 
-<div class="section">
-<h2>🏗️ Mechanics</h2>
-<div class="card">
-<a href="#">Newton's 2nd Law</a><br>
-<a href="#">Young's Modulus</a><br>
-<a href="#">Surface Tension</a>
-</div>
-</div>
+<a href="#"><div class="card">
+<div class="icon"><i class="fas fa-ruler"></i></div>
+<div><b>Young's Modulus</b><br><small>Stress & Strain</small></div>
+</div></a>
 
-<div class="section">
-<h2>⚡ Electricals</h2>
-<div class="card">
-<a href="#">Ohm's Law</a><br>
-<a href="#">DC Power</a>
 </div>
 </div>
 
-<div class="section">
-<h2>🔍 Optics</h2>
-<div class="card">
-<a href="#">Refractive Index</a><br>
-<a href="#">Power of Lens</a>
+<!-- Electrical -->
+<div class="section elec">
+<h2>⚡ Electricals Suite</h2>
+<div class="grid">
+
+<a href="#"><div class="card">
+<div class="icon"><i class="fas fa-plug"></i></div>
+<div><b>Ohm's Law</b><br><small>V, I, R relations</small></div>
+</div></a>
+
+<a href="#"><div class="card">
+<div class="icon"><i class="fas fa-bolt"></i></div>
+<div><b>DC Power</b><br><small>Joule's Law</small></div>
+</div></a>
+
 </div>
 </div>
 
-<div class="section">
-<h2>🔊 Acoustics</h2>
-<div class="card">
-<a href="#">Speed of Sound</a><br>
-<a href="#">Sound in Media</a>
+<!-- Optics -->
+<div class="section opt">
+<h2>🔍 Optics Wing</h2>
+<div class="grid">
+
+<a href="#"><div class="card">
+<div class="icon"><i class="fas fa-eye"></i></div>
+<div><b>Refractive Index</b><br><small>Light behavior</small></div>
+</div></a>
+
+<a href="#"><div class="card">
+<div class="icon"><i class="fas fa-glasses"></i></div>
+<div><b>Power of Lens</b><br><small>Focal length</small></div>
+</div></a>
+
 </div>
 </div>
 
-<div class="section">
+<!-- Thermodynamics -->
+<div class="section thermo">
 <h2>🌡️ Thermodynamics</h2>
-<div class="card">
-<a href="#">Ideal Gas</a><br>
-<a href="#">Latent Heat</a>
+<div class="grid">
+
+<a href="#"><div class="card">
+<div class="icon"><i class="fas fa-fire"></i></div>
+<div><b>Ideal Gas</b><br><small>Gas equations</small></div>
+</div></a>
+
+<a href="#"><div class="card">
+<div class="icon"><i class="fas fa-temperature-high"></i></div>
+<div><b>Latent Heat</b><br><small>Phase change energy</small></div>
+</div></a>
+
 </div>
 </div>
 
-<div class="section">
-<h2>🛠️ Tech Stack</h2>
-<div class="card">
-Python • LaTeX • Solid State Physics • Analytical Instrumentation
-</div>
-</div>
-
-<div class="section">
-<h2>✍️ About</h2>
-<div class="card">
-<b>Vedika Apte</b><br>
-M.Sc Physics | Python Developer<br><br>
-Building tools that simplify complex physics using clean code.
-</div>
-</div>
-
+<!-- Footer -->
 <div class="footer">
-<div class="icons">
 <a href="https://www.linkedin.com/in/vedika-vishwas-apte-9337343a8"><i class="fab fa-linkedin"></i></a>
 <a href="https://www.upwork.com/freelancers/~01cfc2f5a79060483b"><i class="fab fa-upwork"></i></a>
-</div>
-<br>
-© 2026 Physics Python Tools Gallery
+<p>© 2026 Physics Python Tools</p>
 </div>
 
 </div>
+
 </body>
 </html>
