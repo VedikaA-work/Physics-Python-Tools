@@ -3,68 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physics-Python-Tools Gallery | Vedika Apte</title>
+    <title>Physics-Python-Tools Gallery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary: #2c3e50; /* Deep Slate - Professional */
-            --accent: #3498db;  /* Blue - Technical/Trust */
-            --subtle: #95a5a6;  /* Grey - Metadata */
-            --upwork: #6fda44;  /* Upwork Green */
-            --linkedin: #0077b5;/* LinkedIn Blue */
-            --bg: #fdfdfd;      /* Almost White */
+            --mechanics: #e67e22; /* Orange */
+            --electrical: #f1c40f; /* Yellow/Gold */
+            --optics: #9b59b6; /* Purple */
+            --acoustics: #2ecc71; /* Green */
+            --thermo: #e74c3c; /* Red */
+            --primary: #2c3e50;
+            --bg: #f4f7f6;
         }
         
-        body { font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: #333; background: var(--bg); margin: 0; padding: 0; }
-        
-        .container { max-width: 1000px; margin: 50px auto; background: white; padding: 60px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
-        
-        /* HEADER SECTION */
-        header { text-align: center; border-bottom: 2px solid #eee; padding-bottom: 30px; margin-bottom: 40px; }
-        header h1 { color: var(--primary); font-size: 2.5em; margin-bottom: 5px; font-weight: 700; }
-        header .subtitle { font-weight: 300; font-size: 1.2em; color: var(--subtle); text-transform: uppercase; letter-spacing: 2px; }
-        .header-badges { margin: 25px 0 15px 0; }
-        .header-badges img { margin: 0 5px; height: 22px; }
-        .header-desc { max-width: 650px; margin: 0 auto; font-size: 1.1em; color: #555; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: #333; margin: 0; padding: 0; }
+        .container { max-width: 1100px; margin: 40px auto; background: white; padding: 50px; border-radius: 20px; shadow: 0 15px 35px rgba(0,0,0,0.05); }
 
-        /* GALLERY SECTIONS */
-        h2.section-header { color: var(--primary); font-size: 1.8em; margin-top: 50px; border-bottom: 1px solid #eee; padding-bottom: 10px; display: flex; align-items: center; }
-        h2.section-header i { margin-right: 15px; color: var(--accent); opacity: 0.8; }
-        
-        /* The Gallery Card Grid */
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; margin-top: 25px; }
-        
-        /* Interactive "Card" styling */
-        .card { background: #fff; border: 1px solid #eaeaea; padding: 25px; border-radius: 10px; transition: all 0.3s ease; text-decoration: none; color: inherit; display: flex; flex-direction: column; justify-content: space-between; }
-        .card:hover { transform: translateY(-8px); border-color: var(--accent); box-shadow: 0 10px 25px rgba(52, 152, 219, 0.1); }
-        .card-content h4 { margin: 0 0 8px 0; color: var(--accent); font-size: 1.2em; font-weight: 600; }
-        .card-content p { font-size: 0.95em; margin: 0; color: #666; font-weight: 300; }
-        
-        /* A subtle "view tool" prompt on hover */
-        .card-action { margin-top: 15px; font-size: 0.85em; color: var(--subtle); text-transform: uppercase; letter-spacing: 1px; font-weight: bold; opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: flex-end; }
-        .card-action i { margin-left: 5px; }
-        .card:hover .card-action { opacity: 1; color: var(--accent); }
+        /* CLEANER HEADER */
+        header { text-align: center; margin-bottom: 50px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        header h1 { font-size: 2.8em; color: var(--primary); margin: 0; letter-spacing: -1px; }
+        header p { color: #7f8c8d; font-size: 1.1em; margin-top: 10px; }
 
-        /* AUTHOR / CONTACT SECTION */
-        .about-section { margin-top: 70px; padding: 40px; background: #fbfbfb; border-radius: 12px; border: 1px solid #eee; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
-        .author-text { flex: 1; }
-        .author-text h3 { margin: 0 0 10px 0; color: var(--primary); }
-        .author-text p { margin: 5px 0; color: #555; font-size: 1.05em; }
-        
-        /* The real social icons style */
-        .social-links { display: flex; gap: 15px; flex-shrink: 0; }
-        .social-btn { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; color: white; text-decoration: none; font-size: 1.5em; transition: transform 0.2s, box-shadow 0.2s; }
-        .social-btn:hover { transform: scale(1.1); box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
-        .upwork-btn { background-color: var(--upwork); }
-        .linkedin-btn { background-color: var(--linkedin); }
+        /* SECTION TITLES */
+        .section-title { font-size: 1.5em; margin: 40px 0 20px; display: flex; align-items: center; font-weight: 700; color: var(--primary); }
+        .section-title i { margin-right: 12px; }
 
-        footer { text-align: center; margin-top: 60px; padding-top: 20px; font-size: 0.85em; color: var(--subtle); border-top: 1px solid #eee; }
+        /* GRID & COLORED CARDS */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
         
-        /* Small Screen optimization */
+        .card { 
+            text-decoration: none; color: inherit; background: white; border: 1px solid #eee; 
+            padding: 25px; border-radius: 15px; display: flex; align-items: flex-start; 
+            transition: all 0.3s ease; position: relative; overflow: hidden;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        
+        /* Icon Box Styling */
+        .icon-box { 
+            min-width: 50px; height: 50px; border-radius: 12px; 
+            display: flex; align-items: center; justify-content: center; 
+            margin-right: 20px; font-size: 1.4em; color: white;
+        }
+
+        /* Domain Specific Colors */
+        .mechanics-card .icon-box { background: var(--mechanics); }
+        .mechanics-card:hover { border-color: var(--mechanics); }
+        
+        .electrical-card .icon-box { background: var(--electrical); }
+        .electrical-card:hover { border-color: var(--electrical); }
+        
+        .optics-card .icon-box { background: var(--optics); }
+        .optics-card:hover { border-color: var(--optics); }
+        
+        .acoustics-card .icon-box { background: var(--acoustics); }
+        .acoustics-card:hover { border-color: var(--acoustics); }
+
+        .thermo-card .icon-box { background: var(--thermo); }
+        .thermo-card:hover { border-color: var(--thermo); }
+
+        .card-text h4 { margin: 0 0 5px 0; font-size: 1.15em; }
+        .card-text p { margin: 0; font-size: 0.9em; color: #7f8c8d; line-height: 1.4; }
+
+        /* REDESIGNED AUTHOR FOOTER */
+        .author-box { 
+            margin-top: 60px; padding: 30px; background: #2c3e50; color: white; 
+            border-radius: 15px; display: flex; justify-content: space-between; align-items: center;
+        }
+        .author-info h3 { margin: 0; font-size: 1.4em; }
+        .author-info p { margin: 5px 0 0; opacity: 0.8; font-size: 0.95em; }
+        
+        .social-links { display: flex; gap: 15px; }
+        .s-btn { 
+            width: 45px; height: 45px; border-radius: 50%; display: flex; 
+            align-items: center; justify-content: center; color: white; 
+            text-decoration: none; font-size: 1.2em; transition: 0.3s;
+        }
+        .linkedin { background: #0077b5; }
+        .upwork { background: #6fda44; }
+        .s-btn:hover { transform: scale(1.1); filter: brightness(1.1); }
+
         @media (max-width: 768px) {
-            .container { padding: 30px; margin: 20px auto; }
-            .about-section { flex-direction: column; text-align: center; padding: 25px; }
-            .gallery-grid { grid-template-columns: 1fr; }
+            .author-box { flex-direction: column; text-align: center; gap: 20px; }
         }
     </style>
 </head>
@@ -72,107 +91,87 @@
 
 <div class="container">
     <header>
-        <span class="subtitle">M.Sc. Physics | Python Developer</span>
-        <h1>🏛️ Physics-Python-Tools Gallery</h1>
-        <div class="header-badges">
-            <img src="https://img.shields.io/badge/Core-M.Sc.%20Physics-green?style=flat-square" alt="Academic Focus">
-            <img src="https://img.shields.io/badge/Focus-Python%203.x-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python Language">
-        </div>
-        <p class="header-desc">A curated collection transforming <strong>Theoretical Physics formulas</strong> into interactive, error-resistant computational exhibits.</p>
+        <h1>🏛️ The Computing Gallery</h1>
+        <p>Interactive Python Tools for Advanced Physics & Engineering</p>
     </header>
 
-    <h2 class="section-header"><i class="fas fa-microscope"></i> Mechanics Laboratory</h2>
+    <div class="section-title"><i class="fas fa-gears" style="color: var(--mechanics)"></i> Mechanics Laboratory</div>
     <div class="gallery-grid">
-        <a href="newton-law.html" class="card">
-            <div class="card-content">
+        <a href="newton-law.html" class="card mechanics-card">
+            <div class="icon-box"><i class="fas fa-mountain-sun"></i></div>
+            <div class="card-text">
                 <h4>Newton's 2nd Law</h4>
-                <p>Analyze the fundamental relationships between Force, Mass, and Acceleration.</p>
+                <p>Force, Mass, and Acceleration analysis.</p>
             </div>
-            <div class="card-action">View Tool <i class="fas fa-arrow-right"></i></div>
         </a>
-        <a href="youngs-modulus.html" class="card">
-            <div class="card-content">
+        <a href="youngs-modulus.html" class="card mechanics-card">
+            <div class="icon-box"><i class="fas fa-ruler-combined"></i></div>
+            <div class="card-text">
                 <h4>Young's Modulus</h4>
-                <p>Material Science module evaluating stiffness and Stress-Strain dynamics.</p>
+                <p>Material stiffness & stress-strain dynamics.</p>
             </div>
-            <div class="card-action">View Tool <i class="fas fa-arrow-right"></i></div>
-        </a>
-        <a href="surface-tension.html" class="card">
-            <div class="card-content">
-                <h4>Surface Tension</h4>
-                <p>Computing cohesive forces ($\gamma$) acting on liquid interfaces.</p>
-            </div>
-            <div class="card-action">View Tool <i class="fas fa-arrow-right"></i></div>
         </a>
     </div>
 
-    <h2 class="section-header"><i class="fas fa-bolt"></i> Electricals Suite</h2>
+    <div class="section-title"><i class="fas fa-bolt" style="color: var(--electrical)"></i> Electricals Suite</div>
     <div class="gallery-grid">
-        <a href="ohms-law.html" class="card">
-            <div class="card-content">
-                <h4>Ohm's Law Module</h4>
-                <p>Precisely calculating the interplay between Voltage, Current, and Resistance.</p>
+        <a href="ohms-law.html" class="card electrical-card">
+            <div class="icon-box"><i class="fas fa-plug"></i></div>
+            <div class="card-text">
+                <h4>Ohm's Law</h4>
+                <p>V, I, and R circuit calculations.</p>
             </div>
-            <div class="card-action">View Tool <i class="fas fa-arrow-right"></i></div>
         </a>
-        <a href="dc-power.html" class="card">
-            <div class="card-content">
-                <h4>Power of DC Circuit</h4>
-                <p>Comprehensive analysis of power dissipation ($P$) and Joule's Law.</p>
+        <a href="dc-power.html" class="card electrical-card">
+            <div class="icon-box"><i class="fas fa-battery-three-quarters"></i></div>
+            <div class="card-text">
+                <h4>DC Power</h4>
+                <p>Dissipation and Joule's Law analysis.</p>
             </div>
-            <div class="card-action">View Tool <i class="fas fa-arrow-right"></i></div>
         </a>
     </div>
 
-    <h2 class="section-header"><i class="fas fa-eye"></i> Optics Wing</h2>
+    <div class="section-title"><i class="fas fa-lightbulb" style="color: var(--optics)"></i> Optics Wing</div>
     <div class="gallery-grid">
-        <a href="refractive-index.html" class="card">
-            <div class="card-content">
+        <a href="refractive-index.html" class="card optics-card">
+            <div class="icon-box"><i class="fas fa-border-none"></i></div>
+            <div class="card-text">
                 <h4>Refractive Index</h4>
-                <p>Medium behavior analysis using light-speed ratios across various substances.</p>
+                <p>Light-speed ratios in varying media.</p>
             </div>
-            <div class="card-action">View Tool <i class="fas fa-arrow-right"></i></div>
         </a>
-        <a href="power-lens.html" class="card">
-            <div class="card-content">
+        <a href="power-lens.html" class="card optics-card">
+            <div class="icon-box"><i class="fas fa-glasses"></i></div>
+            <div class="card-text">
                 <h4>Power of Lens</h4>
-                <p>Optical power ($D$) determination derived from focal length measurements.</p>
+                <p>Focal length & optical power tools.</p>
             </div>
-            <div class="card-action">View Tool <i class="fas fa-arrow-right"></i></div>
         </a>
     </div>
 
-    <h2 class="section-header"><i class="fas fa-wave-square"></i> Acoustics Gallery</h2>
+    <div class="section-title"><i class="fas fa-fire" style="color: var(--thermo)"></i> Thermodynamics</div>
     <div class="gallery-grid">
-        <a href="speed-sound.html" class="card">
-            <div class="card-content">
-                <h4>Speed of Sound Wave</h4>
-                <p>Frequency, wavelength, and basic propagation speed calculators.</p>
+        <a href="ideal-gas.html" class="card thermo-card">
+            <div class="icon-box"><i class="fas fa-wind"></i></div>
+            <div class="card-text">
+                <h4>Ideal Gas Law</h4>
+                <p>State equations and molar quantities.</p>
             </div>
-            <div class="card-action">View Tool <i class="fas fa-arrow-right"></i></div>
         </a>
     </div>
 
-    <div class="about-section">
-        <div class="author-text">
-            <h3>✍️ About the Author</h3>
-            <p><strong>Developed by Vedika Apte</strong></p>
-            <p>M.Sc. Physics | Python Developer | Freelance Pitch Deck Expert</p>
-            <p>Developing tools that simplify complex physical calculations through clean, efficient code.</p>
+    <div class="author-box">
+        <div class="author-info">
+            <h3>Vedika Apte</h3>
+            <p>M.Sc. Physics • Python Developer • Pitch Deck Expert</p>
         </div>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/vedika-vishwas-apte-9337343a8" class="social-btn linkedin-btn" target="_blank" title="View LinkedIn Profile">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://www.upwork.com/freelancers/~01cfc2f5a79060483b" class="social-btn upwork-btn" target="_blank" title="View Upwork Portfolio">
-                <i class="fas fa-briefcase"></i>
-            </a>
+            <a href="https://www.linkedin.com/in/vedika-vishwas-apte-9337343a8" class="s-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.upwork.com/freelancers/~01cfc2f5a79060483b" class="s-btn upwork"><i class="fas fa-briefcase"></i></a>
         </div>
     </div>
 
-    <footer>
-        © 2026 Physics Python Tools Gallery | Documentation generated from LaTeX sources.
-    </footer>
+    <p style="text-align: center; color: #bdc3c7; font-size: 0.8em; margin-top: 30px;">© 2026 Physics Python Tools</p>
 </div>
 
 </body>
