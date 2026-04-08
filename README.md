@@ -17,7 +17,7 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 ## 🏗️ Mechanics Laboratory
 *Exploring Material Science and Classical Dynamics.*
 
-* **[Newton's 2nd Law of Motion](./Mechanics/Newton's%202nd%20law%20of%20motion/NewtonREADME.md):** Analyzing the relationship between Force, Mass, and Acceleration.
+* **[Newton's 2nd Law of Motion](https://github.com/VedikaA-work/Physics-Python-Tools/blob/main/Mechanics/Newton's%202nd%20law%20of%20motion/NewtonREADME.md)** Analyzing the relationship between Force, Mass, and Acceleration.
 * **[Young's Modulus Module](./Mechanics/Young's%20Modulus/YMREADME.md):** Evaluating material stiffness ($E$) and Stress-Strain dynamics.
 * **[Surface Tension Module](./Mechanics/Surface%20Tension/ST_README.md):** Computing cohesive forces ($\gamma$) acting on liquid interfaces.
 
