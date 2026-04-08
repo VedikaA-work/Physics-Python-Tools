@@ -1,87 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physics Python Tools</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="UTF-8">
+<title>Physics Python Tools</title>
+
+<style>
+body {margin:0; font-family:'Segoe UI'; background:#f8fafc; color:#1e293b;}
+.container {max-width:1100px; margin:auto; padding:20px;}
+h1{text-align:center;}
+
+.section{margin:40px 0;}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+
+.card{
+  background:white;
+  border-radius:15px;
+  padding:20px;
+  display:flex;
+  gap:15px;
+  align-items:center;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.icon{
+  width:50px;
+  height:50px;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:20px;
+}
+
+/* SECTION COLORS */
+.mech .icon{background:#f97316;}
+.elec .icon{background:#3b82f6;}
+.opt .icon{background:#eab308;}
+.thermo .icon{background:#ef4444;}
+
+a{text-decoration:none; color:inherit;}
+
+.footer{text-align:center; margin-top:40px;}
+.footer a{margin:0 10px; font-size:22px; color:#0f172a;}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
-<body style="font-family: sans-serif; background: #f4f7f6; padding: 20px;">
+<body>
 
-<div style="max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-    
-    <header style="text-align: center; border-bottom: 1px solid #eee; margin-bottom: 30px;">
-        <h1>🏛️ Physics Python Tools</h1>
-        <p>Interactive Computational Exhibits</p>
-    </header>
+<div class="container">
 
-    <h3 style="color: #e67e22;"><i class="fas fa-gears"></i> Mechanics Laboratory</h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
-        <a href="newton-law.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
-            <i class="fas fa-apple-alt" style="color:#e67e22; margin-right:15px; font-size:1.5em;"></i>
-            <div><strong>Newton's 2nd Law</strong><br><small>Force, Mass & Acceleration</small></div>
-        </a>
-        <a href="youngs-modulus.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
-            <i class="fas fa-ruler-combined" style="color:#e67e22; margin-right:15px; font-size:1.5em;"></i>
-            <div><strong>Young's Modulus</strong><br><small>Stress-Strain Dynamics</small></div>
-        </a>
-        <a href="surface-tension.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
-            <i class="fas fa-soap" style="color:#e67e22; margin-right:15px; font-size:1.5em;"></i>
-            <div><strong>Surface Tension</strong><br><small>Cohesive Liquid Forces</small></div>
-        </a>
-    </div>
+<h1>🏛️ Physics Python Tools</h1>
+<p style="text-align:center;">Interactive Computational Exhibits</p>
 
-    <h3 style="color: #3498db; margin-top:30px;"><i class="fas fa-bolt"></i> Electricals Suite</h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
-        <a href="ohms-law.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
-            <i class="fas fa-plug" style="color:#3498db; margin-right:15px; font-size:1.5em;"></i>
-            <div><strong>Ohm's Law</strong><br><small>V, I, and R Calculations</small></div>
-        </a>
-        <a href="dc-power.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
-            <i class="fas fa-battery-full" style="color:#3498db; margin-right:15px; font-size:1.5em;"></i>
-            <div><strong>Power of DC Circuit</strong><br><small>Joule's Law Analysis</small></div>
-        </a>
-    </div>
+<!-- Mechanics -->
+<div class="section mech">
+<h2>⚙️ Mechanics Laboratory</h2>
 
-    <h3 style="color: #f1c40f; margin-top:30px;"><i class="fas fa-lightbulb"></i> Optics Wing</h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
-        <a href="refractive-index.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
-            <i class="fas fa-border-none" style="color:#f1c40f; margin-right:15px; font-size:1.5em;"></i>
-            <div><strong>Refractive Index</strong><br><small>Light-speed Medium Ratios</small></div>
-        </a>
-        <a href="power-lens.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
-            <i class="fas fa-glasses" style="color:#f1c40f; margin-right:15px; font-size:1.5em;"></i>
-            <div><strong>Power of Lens</strong><br><small>Focal Length Determination</small></div>
-        </a>
-    </div>
+<div class="grid">
 
-    <h3 style="color: #e74c3c; margin-top:30px;"><i class="fas fa-fire"></i> Thermodynamics Gallery</h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
-        <a href="ideal-gas.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
-            <i class="fas fa-wind" style="color:#e74c3c; margin-right:15px; font-size:1.5em;"></i>
-            <div><strong>Ideal Gas Law</strong><br><small>Molar State Equations</small></div>
-        </a>
-        <a href="latent-heat.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
-            <i class="fas fa-smog" style="color:#e74c3c; margin-right:15px; font-size:1.5em;"></i>
-            <div><strong>Latent Heat Module</strong><br><small>Phase Change Energy</small></div>
-        </a>
-    </div>
+<a href="#">
+<div class="card">
+<div class="icon"><i class="fas fa-apple-whole"></i></div>
+<div>
+<b>Newton's 2nd Law</b><br>
+<small>Force, Mass & Acceleration</small>
+</div>
+</div>
+</a>
 
-    <footer style="margin-top: 50px; padding-top: 30px; border-top: 2px solid #f4f7f6;">
-        <h3>✍️ About the Author</h3>
-        <p><strong>Developed by Vedika Apte</strong></p>
-        <p><em>M.Sc. Physics | Python Developer | Freelance Pitch Deck Expert</em></p>
-        <p style="color: #666;">Developing tools that simplify complex physical calculations through clean, efficient code. This gallery is a testament to the intersection of scientific rigor and modern programming.</p>
-        
-        <div style="display: flex; gap: 10px; margin-top: 15px;">
-            <a href="YOUR_LINKEDIN_URL" style="background:#0077b5; color:white; width:35px; height:35px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
-            <a href="YOUR_UPWORK_URL" style="background:#6fda44; color:white; width:35px; height:35px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-weight:bold; font-family:sans-serif;">U</a>
-        </div>
-        
-        <p style="margin-top: 25px; font-size: 0.8em; color: #bdc3c7;">© 2026 Physics Python Tools Gallery</p>
-    </footer>
+<a href="#">
+<div class="card">
+<div class="icon"><i class="fas fa-ruler"></i></div>
+<div>
+<b>Young's Modulus</b><br>
+<small>Stress-Strain Dynamics</small>
+</div>
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+<div class="icon"><i class="fas fa-soap"></i></div>
+<div>
+<b>Surface Tension</b><br>
+<small>Cohesive Liquid Forces</small>
+</div>
+</div>
+</a>
+
+</div>
+</div>
+
+<!-- Electrical -->
+<div class="section elec">
+<h2>⚡ Electricals Suite</h2>
+
+<div class="grid">
+
+<a href="#">
+<div class="card">
+<div class="icon"><i class="fas fa-plug"></i></div>
+<div>
+<b>Ohm's Law</b><br>
+<small>V, I, and R Calculations</small>
+</div>
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+<div class="icon"><i class="fas fa-battery-half"></i></div>
+<div>
+<b>Power of DC Circuit</b><br>
+<small>Joule's Law Analysis</small>
+</div>
+</div>
+</a>
+
+</div>
+</div>
+
+<!-- Optics -->
+<div class="section opt">
+<h2>💡 Optics Wing</h2>
+
+<div class="grid">
+
+<a href="#">
+<div class="card">
+<div class="icon"><i class="fas fa-braille"></i></div>
+<div>
+<b>Refractive Index</b><br>
+<small>Light-speed Medium Ratios</small>
+</div>
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+<div class="icon"><i class="fas fa-glasses"></i></div>
+<div>
+<b>Power of Lens</b><br>
+<small>Focal Length Determination</small>
+</div>
+</div>
+</a>
+
+</div>
+</div>
+
+<!-- Thermodynamics -->
+<div class="section thermo">
+<h2>🔥 Thermodynamics Gallery</h2>
+
+<div class="grid">
+
+<a href="#">
+<div class="card">
+<div class="icon"><i class="fas fa-wind"></i></div>
+<div>
+<b>Ideal Gas Law</b><br>
+<small>Molar State Equations</small>
+</div>
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+<div class="icon"><i class="fas fa-cloud"></i></div>
+<div>
+<b>Latent Heat Module</b><br>
+<small>Phase Change Energy</small>
+</div>
+</div>
+</a>
+
+</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+
+<a href="https://www.linkedin.com/in/vedika-vishwas-apte-9337343a8">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://www.upwork.com/freelancers/~01cfc2f5a79060483b">
+<i class="fab fa-upwork"></i>
+</a>
+
+<p>© 2026 Physics Python Tools</p>
 
 </div>
 
+</div>
+<!-- Footer -->
+<div class="footer">
+
+<hr style="margin:40px 0; border:none; border-top:1px solid #e2e8f0;">
+
+<h3>✍️ About the Author</h3>
+
+<p><b>Developed by Vedika Apte</b></p>
+
+<p>
+M.Sc. Physics | Python Developer | Freelance Pitch Deck Expert
+</p>
+
+<p style="max-width:700px; margin:auto; line-height:1.6;">
+Developing tools that simplify complex physical calculations through clean, efficient code.
+This gallery is a testament to the intersection of scientific rigor and modern programming.
+</p>
+
+<div style="margin-top:20px;">
+
+<a href="https://www.linkedin.com/in/vedika-vishwas-apte-9337343a8">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://www.upwork.com/freelancers/~01cfc2f5a79060483b">
+<i class="fab fa-upwork"></i>
+</a>
+
+</div>
+
+<p style="margin-top:20px;">© 2026 Physics Python Tools Gallery</p>
+
+</div>
 </body>
 </html>
