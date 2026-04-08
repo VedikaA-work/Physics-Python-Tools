@@ -5,63 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physics Python Tools</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root { --mech: #e67e22; --elec: #3498db; --opt: #f1c40f; --thermo: #e74c3c; --dark: #2c3e50; }
-        body { font-family: 'Inter', sans-serif; background: #f4f7f6; color: #333; padding: 20px; line-height: 1.5; }
-        .container { max-width: 950px; margin: auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        header { text-align: center; border-bottom: 1px solid #eee; margin-bottom: 30px; }
-        .sec { font-size: 1.3em; margin: 30px 0 15px; font-weight: 700; display: flex; align-items: center; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
-        .card { text-decoration: none; color: inherit; border: 1px solid #eee; padding: 18px; border-radius: 12px; display: flex; align-items: center; transition: 0.3s; }
-        .card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-color: currentColor; }
-        .icon { width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; color: white; }
-        .footer { margin-top: 50px; padding-top: 30px; border-top: 2px solid #f4f7f6; }
-        .social { display: flex; gap: 10px; margin-top: 15px; }
-        .s-btn { width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: 0.2s; font-size: 0.9em; }
-        .s-btn:hover { transform: scale(1.1); }
-    </style>
 </head>
-<body>
+<body style="font-family: sans-serif; background: #f4f7f6; padding: 20px;">
 
-<div class="container">
-    <header>
+<div style="max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+    
+    <header style="text-align: center; border-bottom: 1px solid #eee; margin-bottom: 30px;">
         <h1>🏛️ Physics Python Tools</h1>
         <p>Interactive Computational Exhibits</p>
     </header>
 
-    <div class="sec" style="color: var(--mech)"><i class="fas fa-gears mr-2"></i> Mechanics</div>
-    <div class="grid">
-        <a href="newton-law.html" class="card" style="color: var(--mech)"><div class="icon" style="background: var(--mech)"><i class="fas fa-apple-alt"></i></div><div><h4>Newton's 2nd Law</h4><p>Force & Mass analysis</p></div></a>
-        <a href="surface-tension.html" class="card" style="color: var(--mech)"><div class="icon" style="background: var(--mech)"><i class="fas fa-soap"></i></div><div><h4>Surface Tension</h4><p>Cohesive liquid forces</p></div></a>
+    <h3 style="color: #e67e22;"><i class="fas fa-gears"></i> Mechanics Laboratory</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+        <a href="newton-law.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
+            <i class="fas fa-apple-alt" style="color:#e67e22; margin-right:15px; font-size:1.5em;"></i>
+            <div><strong>Newton's 2nd Law</strong><br><small>Force, Mass & Acceleration</small></div>
+        </a>
+        <a href="youngs-modulus.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
+            <i class="fas fa-ruler-combined" style="color:#e67e22; margin-right:15px; font-size:1.5em;"></i>
+            <div><strong>Young's Modulus</strong><br><small>Stress-Strain Dynamics</small></div>
+        </a>
+        <a href="surface-tension.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
+            <i class="fas fa-soap" style="color:#e67e22; margin-right:15px; font-size:1.5em;"></i>
+            <div><strong>Surface Tension</strong><br><small>Cohesive Liquid Forces</small></div>
+        </a>
     </div>
 
-    <div class="sec" style="color: var(--elec)"><i class="fas fa-bolt mr-2"></i> Electricals</div>
-    <div class="grid">
-        <a href="ohms-law.html" class="card" style="color: var(--elec)"><div class="icon" style="background: var(--elec)"><i class="fas fa-plug"></i></div><div><h4>Ohm's Law</h4><p>V, I, R calculations</p></div></a>
+    <h3 style="color: #3498db; margin-top:30px;"><i class="fas fa-bolt"></i> Electricals Suite</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+        <a href="ohms-law.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
+            <i class="fas fa-plug" style="color:#3498db; margin-right:15px; font-size:1.5em;"></i>
+            <div><strong>Ohm's Law</strong><br><small>V, I, and R Calculations</small></div>
+        </a>
+        <a href="dc-power.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
+            <i class="fas fa-battery-full" style="color:#3498db; margin-right:15px; font-size:1.5em;"></i>
+            <div><strong>Power of DC Circuit</strong><br><small>Joule's Law Analysis</small></div>
+        </a>
     </div>
 
-    <div class="sec" style="color: var(--opt)"><i class="fas fa-lightbulb mr-2"></i> Optics</div>
-    <div class="grid">
-        <a href="power-lens.html" class="card" style="color: var(--opt)"><div class="icon" style="background: var(--opt)"><i class="fas fa-glasses"></i></div><div><h4>Power of Lens</h4><p>Focal length tools</p></div></a>
+    <h3 style="color: #f1c40f; margin-top:30px;"><i class="fas fa-lightbulb"></i> Optics Wing</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+        <a href="refractive-index.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
+            <i class="fas fa-border-none" style="color:#f1c40f; margin-right:15px; font-size:1.5em;"></i>
+            <div><strong>Refractive Index</strong><br><small>Light-speed Medium Ratios</small></div>
+        </a>
+        <a href="power-lens.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
+            <i class="fas fa-glasses" style="color:#f1c40f; margin-right:15px; font-size:1.5em;"></i>
+            <div><strong>Power of Lens</strong><br><small>Focal Length Determination</small></div>
+        </a>
     </div>
 
-    <div class="sec" style="color: var(--thermo)"><i class="fas fa-fire mr-2"></i> Thermodynamics</div>
-    <div class="grid">
-        <a href="latent-heat.html" class="card" style="color: var(--thermo)"><div class="icon" style="background: var(--thermo)"><i class="fas fa-smog"></i></div><div><h4>Latent Heat</h4><p>Phase change energy</p></div></a>
+    <h3 style="color: #e74c3c; margin-top:30px;"><i class="fas fa-fire"></i> Thermodynamics Gallery</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+        <a href="ideal-gas.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
+            <i class="fas fa-wind" style="color:#e74c3c; margin-right:15px; font-size:1.5em;"></i>
+            <div><strong>Ideal Gas Law</strong><br><small>Molar State Equations</small></div>
+        </a>
+        <a href="latent-heat.html" style="text-decoration:none; color:inherit; border:1px solid #eee; padding:15px; border-radius:10px; display:flex; align-items:center;">
+            <i class="fas fa-smog" style="color:#e74c3c; margin-right:15px; font-size:1.5em;"></i>
+            <div><strong>Latent Heat Module</strong><br><small>Phase Change Energy</small></div>
+        </a>
     </div>
 
-    <div class="footer">
+    <footer style="margin-top: 50px; padding-top: 30px; border-top: 2px solid #f4f7f6;">
         <h3>✍️ About the Author</h3>
         <p><strong>Developed by Vedika Apte</strong></p>
         <p><em>M.Sc. Physics | Python Developer | Freelance Pitch Deck Expert</em></p>
-        <p style="color: #666; font-size: 0.95em;">Developing tools that simplify complex physical calculations through clean, efficient code. This gallery is a testament to the intersection of scientific rigor and modern programming.</p>
+        <p style="color: #666;">Developing tools that simplify complex physical calculations through clean, efficient code. This gallery is a testament to the intersection of scientific rigor and modern programming.</p>
         
-        <div class="social">
-            <a href="https://linkedin.com/in/..." class="s-btn" style="background:#0077b5"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://upwork.com/..." class="s-btn" style="background:#6fda44; font-weight: bold; font-family: sans-serif;">U</a>
+        <div style="display: flex; gap: 10px; margin-top: 15px;">
+            <a href="YOUR_LINKEDIN_URL" style="background:#0077b5; color:white; width:35px; height:35px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
+            <a href="YOUR_UPWORK_URL" style="background:#6fda44; color:white; width:35px; height:35px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-weight:bold; font-family:sans-serif;">U</a>
         </div>
+        
         <p style="margin-top: 25px; font-size: 0.8em; color: #bdc3c7;">© 2026 Physics Python Tools Gallery</p>
-    </div>
+    </footer>
+
 </div>
 
 </body>
