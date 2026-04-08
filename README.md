@@ -34,7 +34,7 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 ## 🔍 Optics Wing
 *Analyzing light behavior and geometric properties of lenses.*
 
-* **[Refractive Index](https://github.com/VedikaA-work/Physics-Python-Tools/blob/main//Optics/Refractive%20Index/RIndexREADME.md):** Medium behavior analysis using light-speed ratios ($n$).
+* **[Refractive Index](https://github.com/VedikaA-work/Physics-Python-Tools/blob/main//Optics/Refractive%20Index/RIndexREADME.md):** Medium behavior analysis using light-speed ratios.
 * **[Power of Lens](https://github.com/VedikaA-work/Physics-Python-Tools/blob/main//Optics/Power%20of%20lens/PLensREADME.md):** Optical power ($D$) determination from focal length measurements.
 ---
 
