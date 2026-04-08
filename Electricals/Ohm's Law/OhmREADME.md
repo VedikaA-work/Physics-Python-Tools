@@ -31,4 +31,7 @@ Run the script and select which parameter you wish to calculate:
 You can view and download the full Python script here: 
 **[👉 ohms_law.py](./ohms_law.py)**
 ---
+
+*Developed by vedika_apte | MSc Physics | Python Developer 
+
 *Part of the Physics Python Tools Gallery*
