@@ -19,7 +19,7 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 
 * **[Newton's 2nd Law of Motion](./Mechanics/Newton's%202nd%20law%20of%20motion/NewtonREADME.md):** Analyzing the relationship between Force, Mass, and Acceleration.
 * **[Young's Modulus Module](./Mechanics/Young's%20Modulus/YMREADME.md):** Evaluating material stiffness ($E$) and Stress-Strain dynamics.
-* **[Surface Tension Module]./Mechanics/Surface%20Tension/ST_README.md):** Computing cohesive forces ($\gamma$) acting on liquid interfaces.
+* **[Surface Tension Module](./Mechanics/Surface%20Tension/ST_README.md):** Computing cohesive forces ($\gamma$) acting on liquid interfaces.
 
 ---
 
