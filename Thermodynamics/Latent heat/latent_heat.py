@@ -35,15 +35,15 @@ try:
         heat1 = input("Enter Latent heat of fusion:")
         Lf = float(heat1)
     
-        L_fus = L_heat_fusion(m,Lf)
-        print("Speed of sound in solid medium is:" , L_fus , "J/Kg")
+        Q1 = L_heat_fusion(m,Lf)
+        print("Total Heat Energy is:" , Q1 , "J/Kg")
     
     elif select==2:
         heat2 = input("Enter Latent heat of vaporiztion:")
         Lv = float(heat2)
     
-        L_vap = L_heat_vaporization(m,Lv)
-        print("Speed of sound in liquid medium is:" , L_vap , "J/Kg")
+        Q2 = L_heat_vaporization(m,Lv)
+         print("Total Heat Energy is:" , Q2 , "J/Kg")
 
 except:
     print("Error: Enter a numeric value")
