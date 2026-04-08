@@ -60,9 +60,15 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 * **Analytical Expertise:** `Solid State Physics` & `Analytical Instrumentation`.
 
 ---
+## ✍️ About the Author
+**Developed by Vedika Apte** 
+*M.Sc. Physics | Python Developer | Freelance Pitch Deck Expert*
 
-**Developed by Vedika Apte**
-*M.Sc. Physics | Python Developer | Pitch Deck Designer*
+Developing tools that simplify complex physical calculations through clean, efficient code. This gallery is a testament to the intersection of scientific rigor and modern programming.
+
+---
+*© 2026 Physics Python Tools Gallery*
+
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vedika-vishwas-apte-9337343a8) 
 [![Upwork](https://img.shields.io/badge/Upwork-Portfolio-6fda44?style=for-the-badge&logo=upwork)](https://www.upwork.com/freelancers/~01cfc2f5a79060483b)
