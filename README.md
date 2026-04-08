@@ -31,12 +31,19 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 
 ---
 
-## 🔍 Optics & Wave Mechanics
-*Analyzing light behavior and acoustic propagation.*
+## 🔍 Optics Wing
+*Analyzing light behavior and geometric properties of lenses.*
 
 * **[Power of Lens](./Optics/Power%20of%20lens):** Optical power ($D$) determination from focal length measurements.
 * **[Refractive Index](./Optics/Refractive%20Index):** Medium behavior analysis using light-speed ratios ($n$).
-* **[Sound & Media Analysis](./Sound):** Dual modules for Wave Speed ($v$) and phase-dependent acoustic velocity across solids, liquids, and gases.
+
+---
+
+## 🔊 Acoustics Gallery
+*Computational analysis of wave mechanics and sound propagation.*
+
+* **[Speed of Sound in Media](./Sound/Speed%20of%20sound%20in%20media):** Velocity analysis across solids, liquids, and gases.
+* **[Wave Mechanics](./Sound/Speed%20of%20sound):** Frequency, wavelength, and propagation speed calculators.
 
 ---
 
@@ -50,14 +57,13 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 
 ## 🛠️ Technical Stack & Core Competencies
 * **Scientific Computing:** `Python 3.x` & `Mathematical Logic`.
-* **Documentation:** `LaTeX` for high-fidelity scientific rendering in READMEs.
+* **Documentation:** `LaTeX` for high-fidelity scientific rendering.
 * **Analytical Expertise:** `Solid State Physics` & `Analytical Instrumentation`.
-* **Strategic Design:** `Conversion-Optimized Layouts` (Pitch Deck Design principles applied to documentation).
 
 ---
 
 **Developed by Vedika Apte**
-*M.Sc. Physics | Analytical Instrumentation | Python Developer | Pitch Deck Designer*
+*M.Sc. Physics | Python Developer | Pitch Deck Designer*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vedika-vishwas-apte-9337343a8) 
 [![Upwork](https://img.shields.io/badge/Upwork-Portfolio-6fda44?style=for-the-badge&logo=upwork)](https://www.upwork.com/freelancers/~01cfc2f5a79060483b)
