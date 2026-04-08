@@ -41,7 +41,7 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 ## 🔊 Acoustics Gallery
 *Computational analysis of wave mechanics and sound propagation.*
 
-* **[Speed of Sound Wave](https://github.com/VedikaA-work/Physics-Python-Tools/blob/main//Sound/Speed%20of%20sound/SoundREADME.md):** Frequency, wavelength, and propagation speed calculators.
+* **[Speed of Sound Wave](https://github.com/VedikaA-work/Physics-Python-Tools/blob/main//Sound/Speed%20of%20sound/SoundREADME.md):** Frequency, wavelength, and propagation speed calculators. ($S$)
 * **[Speed of Sound in Media](https://github.com/VedikaA-work/Physics-Python-Tools/blob/main//Sound/Speed%20of%20sound%20in%20media/Sound_mediaREADME.md):** Velocity analysis across solids, liquids, and gases.
 
 ---
