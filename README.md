@@ -63,7 +63,7 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 ## ✍️ About the Author
 **Developed by Vedika Apte** 
 
-*M.Sc. Physics | Python Developer | Freelance Pitch Deck Expert*
+* M.Sc. Physics | Python Developer | Freelance Pitch Deck Expert *
 
 Developing tools that simplify complex physical calculations through clean, efficient code. This gallery is a testament to the intersection of scientific rigor and modern programming.
 
