@@ -4,7 +4,7 @@ This module provides a computational tool to determine the **Number of Moles** (
 
 ## 🧪 Scientific Overview
 
-![Ideal Gas Law Diagram]()
+![Ideal Gas Law Diagram](ideal_gas_law.png)
 
 The Ideal Gas Law is the equation of state of a hypothetical ideal gas. It is a good approximation of the behavior of many gases under many conditions, although it has several limitations.
 
