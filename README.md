@@ -12,6 +12,8 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 
 ---
 
+![Cover image](cover_image.png)
+
 ## 🏗️ Mechanics Laboratory
 *Exploring Material Science and Classical Dynamics.*
 
