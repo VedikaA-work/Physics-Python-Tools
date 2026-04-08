@@ -17,41 +17,40 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 ## 🏗️ Mechanics Laboratory
 *Exploring Material Science and Classical Dynamics.*
 
-* **[Newton's 2nd Law of Motion](./Mechanics/Newton's%202nd%20law%20of%20motion):** Analyzing the relationship between Force, Mass, and Acceleration.
-* **[Surface Tension Module](./Mechanics/Surface%20Tension):** Computing cohesive forces ($\gamma$) acting on liquid interfaces.
-* **[Young's Modulus Module](./Mechanics/Young's%20Modulus):** Evaluating material stiffness ($E$) and Stress-Strain dynamics.
+* **[Newton's 2nd Law of Motion](./Mechanics/Newton's%202nd%20law%20of%20motion/NewtonREADME.md):** Analyzing the relationship between Force, Mass, and Acceleration.
+* **[Young's Modulus Module](./Mechanics/Young's%20Modulus/YMREADME.md):** Evaluating material stiffness ($E$) and Stress-Strain dynamics.
+* **[Surface Tension Module]./Mechanics/Surface%20Tension/ST_README.md):** Computing cohesive forces ($\gamma$) acting on liquid interfaces.
 
 ---
 
 ## ⚡ Electricals Suite
 *Precision tools for circuit analysis and electrical engineering.*
 
-* **[Ohm's Law Module](./Electricals/Ohm's%20Law):** Calculating the interplay between Voltage ($V$), Current ($I$), and Resistance ($R$).
-* **[Power of DC Circuit](./Electricals/Power%20of%20DC%20circuit):** Comprehensive analysis of power dissipation ($P$) and Joule's Law.
+* **[Ohm's Law Module](./Electricals/Ohm's%20Law/OhmREADME.md):** Calculating the interplay between Voltage ($V$), Current ($I$), and Resistance ($R$).
+* **[Power of DC Circuit](./Electricals/Power%20of%20DC%20circuit/DCpowerREADME.md):** Comprehensive analysis of power dissipation ($P$) and Joule's Law.
 
 ---
 
 ## 🔍 Optics Wing
 *Analyzing light behavior and geometric properties of lenses.*
 
-* **[Power of Lens](./Optics/Power%20of%20lens):** Optical power ($D$) determination from focal length measurements.
-* **[Refractive Index](./Optics/Refractive%20Index):** Medium behavior analysis using light-speed ratios ($n$).
-
+* **[Refractive Index](./Optics/Refractive%20Index/RIndexREADME.md):** Medium behavior analysis using light-speed ratios ($n$).
+* **[Power of Lens](./Optics/Power%20of%20lens/PLensREADME.md):** Optical power ($D$) determination from focal length measurements.
 ---
 
 ## 🔊 Acoustics Gallery
 *Computational analysis of wave mechanics and sound propagation.*
 
-* **[Speed of Sound in Media](./Sound/Speed%20of%20sound%20in%20media):** Velocity analysis across solids, liquids, and gases.
-* **[Wave Mechanics](./Sound/Speed%20of%20sound):** Frequency, wavelength, and propagation speed calculators.
+* **[Speed of Sound Wave](./Sound/Speed%20of%20sound/SoundREADME.md):** Frequency, wavelength, and propagation speed calculators.
+* **[Speed of Sound in Media](./Sound/Speed%20of%20sound%20in%20media/Sound_mediaREADME.md):** Velocity analysis across solids, liquids, and gases.
 
 ---
 
 ## 🌡️ Thermodynamics Gallery
 *Computational tools for heat, energy, and state equations.*
 
-* **[Ideal Gas Module](./Thermodynamics/Ideal%20gas):** Determining molar quantities ($n$) using the universal gas equation.
-* **[Latent Heat Module](./Thermodynamics/Latent%20heat):** Calculating energy requirements ($Q$) for Fusion and Vaporization phase changes.
+* **[Ideal Gas Module](./Thermodynamics/Ideal%20gas/IgasREADME.md):** Determining molar quantities ($n$) using the universal gas equation.
+* **[Latent Heat Module](./Thermodynamics/Latent%20heat/LHREADME.md):** Calculating energy requirements ($Q$) for Fusion and Vaporization phase changes.
 
 ---
 
