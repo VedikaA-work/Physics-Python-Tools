@@ -61,7 +61,6 @@ Welcome to my curated collection of Python-based tools, bridging the gap between
 
 ---
 ## ✍️ About the Author
-
 **Developed by Vedika Apte** 
 
 *M.Sc. Physics | Python Developer | Freelance Pitch Deck Expert*
